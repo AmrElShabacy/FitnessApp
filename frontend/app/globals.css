@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+  background-color: #283132;
+  overflow-x: hidden;
+  
+}
+.sublist {
+  list-style: none;
+}
+.sublist li {
+  position: relative;
+}
+.sublist li::before {
+  content: "";
+  background-image: url("../public/assets/checkmark.svg");
+  background-size: contain;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: -24px;
+}
+
+h2 {
+  margin-top: 24px;
+}
+.planBack {
+  background: url("../public/assets/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  width: 80%;
+  /* blur on the photo */
+  filter: blur(15px);
+
+  height: 100%;
+}
